@@ -4,7 +4,9 @@ from dotenv import load_dotenv
 import os
 import json
 
-load_dotenv()
+# Only load from .env if not in cloud environment
+if os.path.exists('.env'):
+    load_dotenv()
 
 BASE_API_URL = "https://api.langflow.astra.datastax.com"
 LANGFLOW_ID = os.getenv('LANGFLOW_FLOW_ID')

@@ -3,7 +3,9 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 
-load_dotenv()
+# Only load from .env if not in cloud environment
+if os.path.exists('.env'):
+    load_dotenv()
 
 ENDPOINT = os.getenv("ASTRA_ENDPOINT")
 TOKEN = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
