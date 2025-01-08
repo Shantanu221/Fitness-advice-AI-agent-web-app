@@ -115,8 +115,8 @@ AI-Coach-App/
 
 - **Python**: The main programming language used.
 - **Streamlit**: The framework used for building the web application.
-- **SQLite**: The database used for storing user data and notes.
-- **OpenAI API**: Used for generating AI responses.
+- **AstraDB**: The database used for storing user data and notes in vector form.
+- **Groq API**: Used for generating AI responses.
 
 ## Contributing
 
