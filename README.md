@@ -24,47 +24,70 @@ The AI Coach App is a web application designed to provide personalized fitness a
 ## Installation
 
 1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/yourusername/AI-Coach-App.git
-    cd AI-Coach-App
-    ```
+
+   ```sh
+   git clone https://github.com/yourusername/AI-Coach-App.git
+   cd AI-Coach-App
+   ```
 
 2. **Create and activate a virtual environment**:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
 3. **Install the required packages**:
-    ```sh
-    pip install -r requirements.txt
-    ```
+
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 4. **Set up environment variables**:
-    Create a [.env](http://_vscodecontentref_/0) file in the root directory and add the necessary environment variables:
-    ```
-    APPLICATION_TOKEN_2=your_application_token
-    ```
+   Create a [.env](http://_vscodecontentref_/0) file in the root directory and add the necessary environment variables:
+   ```
+   APPLICATION_TOKEN_2=your_application_token
+   ```
 
 ## Usage
 
 1. **Run the application**:
-    ```sh
-    streamlit run main.py
-    ```
+
+   ```sh
+   streamlit run main.py
+   ```
 
 2. **Access the application**:
-    Open your web browser and go to `http://localhost:8501`.
+   Open your web browser and go to `http://localhost:8501`.
 
 3. **Interact with the application**:
-    - Fill out the personal data form.
-    - Set your fitness goals.
-    - Add notes and ask the AI questions to receive personalized advice.
+   - Fill out the personal data form.
+   - Set your fitness goals.
+   - Add notes and ask the AI questions to receive personalized advice.
 
 ## Project Structure
 
-AI-Coach-App/ ├── init.py ├── pycache/ ├── .env ├── .gitignore ├── ai.py ├── db.py ├── flows/ │ ├── AskAI.json │ ├── Macro.json ├── form_submit.py ├── LICENSE ├── main.py ├── profiles.py ├── prompts/ │ ├── conditional_router.txt │ ├── general_agent.txt │ ├── macro.txt │ ├── tool_calling_agent.txt ├── README.md ├── requirements.txt
-
+AI-Coach-App/
+├── init.py
+├── pycache/
+├── .env
+├── .gitignore
+├── ai.py
+├── db.py
+├── flows/
+│ ├── AskAI.json
+│ ├── Macro.json
+├── form_submit.py
+├── LICENSE
+├── main.py
+├── profiles.py
+├── prompts/
+│ ├── conditional_router.txt
+│ ├── general_agent.txt
+│ ├── macro.txt
+│ ├── tool_calling_agent.txt
+├── README.md
+├── requirements.txt
 
 - **ai.py**: Contains functions for interacting with the AI, including `ask_ai` and `get_macros`.
 - **db.py**: Handles database interactions.
