@@ -67,6 +67,8 @@ The AI Coach App is a web application designed to provide personalized fitness a
 
 ## Project Structure
 
+```plaintext
+.
 AI-Coach-App/
 ├── init.py
 ├── pycache/
@@ -88,6 +90,8 @@ AI-Coach-App/
 │ ├── tool_calling_agent.txt
 ├── README.md
 ├── requirements.txt
+```
+
 
 - **ai.py**: Contains functions for interacting with the AI, including `ask_ai` and `get_macros`.
 - **db.py**: Handles database interactions.
